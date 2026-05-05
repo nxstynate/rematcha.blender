@@ -1,32 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <!-- Gruvbox dark0 background, rounded tile -->
   <rect width="512" height="512" fill="#282828" rx="80" ry="80"/>
 
-  <!-- LEFT COLUMN: four source material swatches in Gruvbox accent colors.  -->
-  <!-- These represent the matched materials found by the regex pattern.    -->
-  <!-- Vertically centered around y=256, 48px tall, 12px gap.                -->
-  <rect x="100" y="148" width="48" height="48" rx="4" fill="#cc241d"/>
-  <rect x="100" y="208" width="48" height="48" rx="4" fill="#d79921"/>
-  <rect x="100" y="268" width="48" height="48" rx="4" fill="#458588"/>
-  <rect x="100" y="328" width="48" height="48" rx="4" fill="#b16286"/>
-
-  <!-- ARROWS: four lines converging from each source swatch into the target. -->
-  <!-- They taper to a single point — the visual collapse of many → one.      -->
-  <!-- Stroke is Gruvbox light4 (#a89984), the neutral-but-visible accent     -->
-  <!-- used in Palette's swatch row.                                          -->
-  <g stroke="#a89984" stroke-width="3" fill="none" stroke-linecap="round">
-    <!-- From swatch 1 (top) to target center -->
-    <line x1="156" y1="172" x2="296" y2="240"/>
-    <!-- From swatch 2 -->
-    <line x1="156" y1="232" x2="296" y2="248"/>
-    <!-- From swatch 3 -->
-    <line x1="156" y1="292" x2="296" y2="264"/>
-    <!-- From swatch 4 (bottom) -->
-    <line x1="156" y1="352" x2="296" y2="272"/>
+  <!-- Asterisk built from 6 thick rounded rects rotated around center (256, 256). -->
+  <!-- Each is 40x320, much larger to fill the tile properly. -->
+  <g transform="translate(256 256)">
+    <rect x="-20" y="-160" width="40" height="320" rx="20" fill="#ebdbb2"/>
+    <rect x="-20" y="-160" width="40" height="320" rx="20" fill="#ebdbb2" transform="rotate(60)"/>
+    <rect x="-20" y="-160" width="40" height="320" rx="20" fill="#ebdbb2" transform="rotate(120)"/>
   </g>
 
-  <!-- TARGET SWATCH: the single material that everything is replaced with. -->
-  <!-- Larger than the source swatches (96px vs 48px), centered vertically, -->
-  <!-- in Gruvbox bright_yellow #fabd2f — the "selected/active" accent.      -->
-  <rect x="304" y="208" width="96" height="96" rx="6" fill="#fabd2f"/>
+  <!-- Center swatch: target material color, visually anchors the asterisk hub -->
+  <rect x="208" y="208" width="96" height="96" rx="8" fill="#fabd2f"/>
 </svg>
