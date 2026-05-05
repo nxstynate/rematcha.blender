@@ -1,7 +1,7 @@
 # ReMatcha
 
 <p align="center">
-    <img src="assets/rematcha-logo.svg" alt="ReMatcha Logo" width="512">
+    <img src="assets/rematcha-logo.svg" alt="ReMatcha Logo" width="256">
 </p>
 
 <p align="center">
